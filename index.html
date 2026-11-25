@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Your Name</title>
+<meta name="description" content="Personal site.">
+<style>
+  :root {
+    --bg: #fbfbf9;
+    --fg: #1a1a18;
+    --muted: #6b6b64;
+    --rule: #e3e3dd;
+    --accent: #3b5bdb;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #141413;
+      --fg: #eceae4;
+      --muted: #9a978e;
+      --rule: #2b2a28;
+      --accent: #8ca4f8;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  main {
+    max-width: 36rem;
+    margin: 0 auto;
+    padding: 16vh 1.5rem 6rem;
+  }
+  h1 {
+    font-size: clamp(2rem, 7vw, 2.75rem);
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    margin: 0 0 0.4rem;
+  }
+  .tagline {
+    color: var(--muted);
+    font-size: 1.0625rem;
+    margin: 0 0 2.5rem;
+  }
+  h2 {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--muted);
+    font-weight: 600;
+    margin: 0 0 0.75rem;
+  }
+  section { margin-bottom: 2.5rem; }
+  p { margin: 0 0 1rem; }
+  ul { list-style: none; padding: 0; margin: 0; }
+  li {
+    padding: 0.6rem 0;
+    border-top: 1px solid var(--rule);
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  li:last-child { border-bottom: 1px solid var(--rule); }
+  li span { color: var(--muted); font-size: 0.9375rem; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover, a:focus-visible { text-decoration: underline; }
+  footer {
+    color: var(--muted);
+    font-size: 0.875rem;
+    border-top: 1px solid var(--rule);
+    padding-top: 1.25rem;
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>Your Name</h1>
+  <p class="tagline">A one-line description of what you do.</p>
+
+  <section>
+    <h2>About</h2>
+    <p>A short paragraph about yourself goes here. Two or three sentences is plenty &mdash; what you work on, what you care about, and what you are looking for next.</p>
+    <p>This is placeholder copy. Replace it with your own.</p>
+  </section>
+
+  <section>
+    <h2>Work</h2>
+    <ul>
+      <li><a href="#">Project One</a> <span>A sentence about it</span></li>
+      <li><a href="#">Project Two</a> <span>A sentence about it</span></li>
+      <li><a href="#">Project Three</a> <span>A sentence about it</span></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Elsewhere</h2>
+    <ul>
+      <li><a href="https://github.com/it-is-tanmay">GitHub</a> <span>it-is-tanmay</span></li>
+      <li><a href="#">LinkedIn</a> <span>add your link</span></li>
+      <li><a href="#">X</a> <span>add your link</span></li>
+    </ul>
+  </section>
+
+  <footer>Placeholder site &mdash; not yet real content.</footer>
+</main>
+</body>
+</html>
